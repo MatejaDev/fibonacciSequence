@@ -1,0 +1,11 @@
+n = int(input())
+niz = "11"
+lastBroj = 1
+lastLastBroj = 1
+for i in range(n):
+    broj = lastBroj + lastLastBroj
+    niz = niz + str(broj)
+    lastLastBroj = lastBroj
+    lastBroj = broj
+output = niz[n-1]
+print(output)
